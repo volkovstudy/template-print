@@ -4,6 +4,10 @@
 
 void testContainerWithIntegersAndCommaDelimiter();
 
+void TestRunner::runAllTests() {
+    testContainerWithIntegersAndCommaDelimiter();
+}
+
 void testContainerWithIntegersAndCommaDelimiter() {
     // Given
     vector<int> container = {1, 2, 3, 4};
