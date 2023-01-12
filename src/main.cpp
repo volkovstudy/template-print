@@ -1,4 +1,3 @@
-#include <iostream>
 #include "../tests/TestRunner.h"
 
 int main() {
