@@ -8,3 +8,14 @@ add_executable(template-print
         src/print.cpp
         tests/TestRunner.cpp tests/TestRunner.h
 )
+
+### TESTING ###
+enable_testing()
+
+add_executable(test-executable
+        src/print.cpp
+        tests/main.cpp
+        tests/TestRunner.cpp tests/TestRunner.h
+)
+
+add_test(test-executable test-executable)
