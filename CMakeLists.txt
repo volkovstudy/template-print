@@ -17,4 +17,4 @@ add_executable(test-executable
         tests/TestRunner.cpp tests/TestRunner.h
 )
 
-add_test(test-executable test-executable)
+add_test(print-function-test test-executable)
