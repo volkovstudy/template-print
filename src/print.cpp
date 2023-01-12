@@ -9,9 +9,18 @@ using namespace std;
 
 template<typename Container>
 void Print(const Container& container, const string& delimiter) {
+    bool isItFirst = true;
+
     for (const auto& item: container) {
-        cout << item << delimiter;
+        if (isItFirst) {
+            isItFirst = false;
+        } else {
+            cout << delimiter;
+        }
+
+        cout << item;
     }
+
     cout << endl;
 }
 
